@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Store</title>
+    <meta charset="UTF-8">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/normalize.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Delivery Store</h1>
+            <h2>
+                <small>For you my honny</small>
+            </h2>
+        </div>
+    </header>
+    <nav class="page-navigation">
+        <div class="container">
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="{% url 'shoping_cart' %}">Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock %}
+    <footer class="footer">
+        <div class="container">
+            <p>
+                © 2022 Delivery from Ukraine
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

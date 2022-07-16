@@ -1,0 +1,31 @@
+{% extends "store/layout.html" %}
+
+{% block body %}
+<main>
+    <!--spot input date user https://habr.com/ru/post/64530/-->
+    <div class="input">
+        <div class="field">
+            <label for="n">Name</label>
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="field">
+            <label for="em">Email</label>
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="field">
+            <label for="tl">Tel</label>
+            <input type="tel" placeholder="Tel">
+        </div>
+        <div class="field">
+            <label for="a">Address</label>
+            <input type="text" placeholder="Address">
+        </div>       
+    </div>
+    <!--cart order-->
+    <div class="staff">
+        <p>There are staff</p>
+    </div>
+    <input type="submit">
+</main>
+
+{% endblock %}
